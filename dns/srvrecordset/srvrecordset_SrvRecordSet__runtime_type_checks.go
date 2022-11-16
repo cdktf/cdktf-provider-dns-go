@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package srvrecordset
 
@@ -144,6 +143,22 @@ func (s *jsiiProxy_SrvRecordSet) validatePutSrvParameters(value interface{}) err
 }
 
 func validateSrvRecordSet_IsConstructParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSrvRecordSet_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSrvRecordSet_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}

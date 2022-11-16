@@ -2,10 +2,10 @@ package ptrrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dns-go/dns/ptrrecord/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v2/ptrrecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -557,6 +557,44 @@ func PtrRecord_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-dns.ptrRecord.PtrRecord",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PtrRecord_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePtrRecord_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.ptrRecord.PtrRecord",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PtrRecord_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePtrRecord_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.ptrRecord.PtrRecord",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

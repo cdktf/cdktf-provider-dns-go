@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package mxrecordset
 
@@ -58,6 +57,14 @@ func (m *jsiiProxy_MxRecordSet) validatePutMxParameters(value interface{}) error
 }
 
 func validateMxRecordSet_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateMxRecordSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMxRecordSet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

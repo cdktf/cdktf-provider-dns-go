@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package nsrecordset
 
@@ -54,6 +53,14 @@ func (n *jsiiProxy_NsRecordSet) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func validateNsRecordSet_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateNsRecordSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNsRecordSet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

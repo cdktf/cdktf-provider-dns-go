@@ -2,10 +2,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dns-go/dns/provider/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v2/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -245,6 +245,44 @@ func DnsProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-dns.provider.DnsProvider",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DnsProvider_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDnsProvider_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.provider.DnsProvider",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DnsProvider_IsTerraformProvider(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDnsProvider_IsTerraformProviderParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.provider.DnsProvider",
+		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
 	)

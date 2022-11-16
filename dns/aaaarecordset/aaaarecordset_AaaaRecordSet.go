@@ -2,10 +2,10 @@ package aaaarecordset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dns-go/dns/aaaarecordset/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v2/aaaarecordset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -557,6 +557,44 @@ func AaaaRecordSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AaaaRecordSet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAaaaRecordSet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AaaaRecordSet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAaaaRecordSet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

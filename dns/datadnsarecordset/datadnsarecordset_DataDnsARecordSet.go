@@ -2,10 +2,10 @@ package datadnsarecordset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dns-go/dns/datadnsarecordset/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v2/datadnsarecordset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -414,6 +414,44 @@ func DataDnsARecordSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-dns.dataDnsARecordSet.DataDnsARecordSet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataDnsARecordSet_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataDnsARecordSet_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.dataDnsARecordSet.DataDnsARecordSet",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataDnsARecordSet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataDnsARecordSet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.dataDnsARecordSet.DataDnsARecordSet",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

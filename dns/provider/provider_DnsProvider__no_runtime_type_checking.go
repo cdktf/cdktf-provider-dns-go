@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package provider
 
@@ -14,6 +13,14 @@ func (d *jsiiProxy_DnsProvider) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func validateDnsProvider_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 

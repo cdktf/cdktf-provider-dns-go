@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package arecordset
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_ARecordSet) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func validateARecordSet_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateARecordSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateARecordSet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

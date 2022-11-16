@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package txtrecordset
 
@@ -54,6 +53,14 @@ func (t *jsiiProxy_TxtRecordSet) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func validateTxtRecordSet_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateTxtRecordSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTxtRecordSet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

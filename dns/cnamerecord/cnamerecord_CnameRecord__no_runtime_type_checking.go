@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package cnamerecord
 
@@ -54,6 +53,14 @@ func (c *jsiiProxy_CnameRecord) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func validateCnameRecord_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateCnameRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCnameRecord_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

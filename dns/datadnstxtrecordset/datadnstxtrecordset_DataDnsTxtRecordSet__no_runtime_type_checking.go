@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadnstxtrecordset
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataDnsTxtRecordSet) validateOverrideLogicalIdParameters(newL
 }
 
 func validateDataDnsTxtRecordSet_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDnsTxtRecordSet_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDnsTxtRecordSet_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

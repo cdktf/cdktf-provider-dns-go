@@ -2,9 +2,9 @@ package srvrecordset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v2/jsii"
 
-	"github.com/cdktf/cdktf-provider-dns-go/dns/srvrecordset/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v2/srvrecordset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

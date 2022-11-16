@@ -2,10 +2,10 @@ package txtrecordset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dns-go/dns/txtrecordset/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v2/txtrecordset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -557,6 +557,44 @@ func TxtRecordSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-dns.txtRecordSet.TxtRecordSet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TxtRecordSet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTxtRecordSet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.txtRecordSet.TxtRecordSet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TxtRecordSet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTxtRecordSet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.txtRecordSet.TxtRecordSet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

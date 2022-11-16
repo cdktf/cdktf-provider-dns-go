@@ -2,10 +2,10 @@ package arecordset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dns-go/dns/arecordset/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v2/arecordset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -557,6 +557,44 @@ func ARecordSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-dns.aRecordSet.ARecordSet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ARecordSet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateARecordSet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.aRecordSet.ARecordSet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ARecordSet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateARecordSet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.aRecordSet.ARecordSet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

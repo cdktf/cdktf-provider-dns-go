@@ -2,10 +2,10 @@ package cnamerecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dns-go/dns/cnamerecord/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v2/cnamerecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -556,6 +556,44 @@ func CnameRecord_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-dns.cnameRecord.CnameRecord",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CnameRecord_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCnameRecord_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.cnameRecord.CnameRecord",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CnameRecord_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCnameRecord_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.cnameRecord.CnameRecord",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)
