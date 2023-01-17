@@ -2,10 +2,10 @@ package txtrecordset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v2/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v3/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dns-go/dns/v2/txtrecordset/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v3/txtrecordset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
