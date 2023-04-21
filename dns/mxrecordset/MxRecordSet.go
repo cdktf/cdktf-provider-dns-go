@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set dns_mx_record_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/mx_record_set dns_mx_record_set}.
 type MxRecordSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_MxRecordSet) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set dns_mx_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/mx_record_set dns_mx_record_set} Resource.
 func NewMxRecordSet(scope constructs.Construct, id *string, config *MxRecordSetConfig) MxRecordSet {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewMxRecordSet(scope constructs.Construct, id *string, config *MxRecordSetC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set dns_mx_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/mx_record_set dns_mx_record_set} Resource.
 func NewMxRecordSet_Override(m MxRecordSet, scope constructs.Construct, id *string, config *MxRecordSetConfig) {
 	_init_.Initialize()
 

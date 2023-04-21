@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/cname_record_set dns_cname_record_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/cname_record_set dns_cname_record_set}.
 type DataDnsCnameRecordSet interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -279,7 +279,7 @@ func (j *jsiiProxy_DataDnsCnameRecordSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/cname_record_set dns_cname_record_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/cname_record_set dns_cname_record_set} Data Source.
 func NewDataDnsCnameRecordSet(scope constructs.Construct, id *string, config *DataDnsCnameRecordSetConfig) DataDnsCnameRecordSet {
 	_init_.Initialize()
 
@@ -297,7 +297,7 @@ func NewDataDnsCnameRecordSet(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/cname_record_set dns_cname_record_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/cname_record_set dns_cname_record_set} Data Source.
 func NewDataDnsCnameRecordSet_Override(d DataDnsCnameRecordSet, scope constructs.Construct, id *string, config *DataDnsCnameRecordSetConfig) {
 	_init_.Initialize()
 
