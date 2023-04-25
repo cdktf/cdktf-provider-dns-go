@@ -8,6 +8,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 func (d *jsiiProxy_DnsProvider) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -54,9 +55,29 @@ func validateDnsProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DnsProvider) validateSetUpdateParameters(val *DnsProviderUpdate) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_DnsProvider) validateSetUpdateParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DnsProviderUpdate:
+		val := val.(*[]*DnsProviderUpdate)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*DnsProviderUpdate:
+		val_ := val.([]*DnsProviderUpdate)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*DnsProviderUpdate; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

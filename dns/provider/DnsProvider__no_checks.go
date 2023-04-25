@@ -24,7 +24,7 @@ func validateDnsProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DnsProvider) validateSetUpdateParameters(val *DnsProviderUpdate) error {
+func (j *jsiiProxy_DnsProvider) validateSetUpdateParameters(val interface{}) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs dns}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs dns}.
 type DnsProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -35,9 +35,9 @@ type DnsProvider interface {
 	TerraformProviderSource() *string
 	// Experimental.
 	TerraformResourceType() *string
-	Update() *DnsProviderUpdate
-	SetUpdate(val *DnsProviderUpdate)
-	UpdateInput() *DnsProviderUpdate
+	Update() interface{}
+	SetUpdate(val interface{})
+	UpdateInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DnsProvider) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsProvider) Update() *DnsProviderUpdate {
-	var returns *DnsProviderUpdate
+func (j *jsiiProxy_DnsProvider) Update() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"update",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_DnsProvider) Update() *DnsProviderUpdate {
 	return returns
 }
 
-func (j *jsiiProxy_DnsProvider) UpdateInput() *DnsProviderUpdate {
-	var returns *DnsProviderUpdate
+func (j *jsiiProxy_DnsProvider) UpdateInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"updateInput",
@@ -204,7 +204,7 @@ func (j *jsiiProxy_DnsProvider) UpdateInput() *DnsProviderUpdate {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs dns} Resource.
 func NewDnsProvider(scope constructs.Construct, id *string, config *DnsProviderConfig) DnsProvider {
 	_init_.Initialize()
 
@@ -222,7 +222,7 @@ func NewDnsProvider(scope constructs.Construct, id *string, config *DnsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs dns} Resource.
 func NewDnsProvider_Override(d DnsProvider, scope constructs.Construct, id *string, config *DnsProviderConfig) {
 	_init_.Initialize()
 
@@ -241,7 +241,7 @@ func (j *jsiiProxy_DnsProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsProvider)SetUpdate(val *DnsProviderUpdate) {
+func (j *jsiiProxy_DnsProvider)SetUpdate(val interface{}) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}

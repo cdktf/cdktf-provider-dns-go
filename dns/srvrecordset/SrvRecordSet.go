@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/srv_record_set dns_srv_record_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/srv_record_set dns_srv_record_set}.
 type SrvRecordSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_SrvRecordSet) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/srv_record_set dns_srv_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/srv_record_set dns_srv_record_set} Resource.
 func NewSrvRecordSet(scope constructs.Construct, id *string, config *SrvRecordSetConfig) SrvRecordSet {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewSrvRecordSet(scope constructs.Construct, id *string, config *SrvRecordSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/srv_record_set dns_srv_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/srv_record_set dns_srv_record_set} Resource.
 func NewSrvRecordSet_Override(s SrvRecordSet, scope constructs.Construct, id *string, config *SrvRecordSetConfig) {
 	_init_.Initialize()
 
