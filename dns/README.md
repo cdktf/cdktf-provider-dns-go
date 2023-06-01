@@ -59,7 +59,9 @@ This project is explicitly not tracking the Terraform dns Provider version 1:1. 
 These are the upstream dependencies:
 
 * [Terraform CDK](https://cdk.tf)
-* [Terraform dns Provider](https://github.com/terraform-providers/terraform-provider-dns)
+* [Terraform dns Provider](https://registry.terraform.io/providers/hashicorp/dns/3.2.0)
+
+  * This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-dns/releases)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
