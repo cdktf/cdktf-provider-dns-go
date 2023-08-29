@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package mxrecordset
@@ -28,6 +31,8 @@ func (m *jsiiProxy_MxRecordSetMxList) validateResolveParameters(_context cdktf.I
 
 func (j *jsiiProxy_MxRecordSetMxList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *[]*MxRecordSetMx:
 		val := val.(*[]*MxRecordSetMx)
 		for idx_97dfc6, v := range *val {
@@ -43,11 +48,9 @@ func (j *jsiiProxy_MxRecordSetMxList) validateSetInternalValueParameters(val int
 				return err
 			}
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *[]*MxRecordSetMx, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*MxRecordSetMx; received %#v (a %T)", val, val)
 		}
 	}
 

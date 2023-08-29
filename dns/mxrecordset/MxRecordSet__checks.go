@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package mxrecordset
@@ -116,6 +119,8 @@ func (m *jsiiProxy_MxRecordSet) validatePutMxParameters(value interface{}) error
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *[]*MxRecordSetMx:
 		value := value.(*[]*MxRecordSetMx)
 		for idx_cd4240, v := range *value {
@@ -131,11 +136,9 @@ func (m *jsiiProxy_MxRecordSet) validatePutMxParameters(value interface{}) error
 				return err
 			}
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: *[]*MxRecordSetMx, cdktf.IResolvable; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MxRecordSetMx; received %#v (a %T)", value, value)
 		}
 	}
 

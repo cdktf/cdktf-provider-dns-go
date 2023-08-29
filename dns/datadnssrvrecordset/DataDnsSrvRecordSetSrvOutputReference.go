@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadnssrvrecordset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-dns-go/dns/v5/datadnssrvrecordset/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnssrvrecordset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
