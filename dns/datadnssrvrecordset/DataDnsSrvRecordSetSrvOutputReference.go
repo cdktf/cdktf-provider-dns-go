@@ -5,9 +5,9 @@ package datadnssrvrecordset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnssrvrecordset/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnssrvrecordset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

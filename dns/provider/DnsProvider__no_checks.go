@@ -15,6 +15,10 @@ func (d *jsiiProxy_DnsProvider) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func validateDnsProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDnsProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package aaaarecordset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AaaaRecordSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AaaaRecordSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AaaaRecordSet) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (a *jsiiProxy_AaaaRecordSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AaaaRecordSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AaaaRecordSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AaaaRecordSet) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAaaaRecordSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

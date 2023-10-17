@@ -5,10 +5,10 @@ package datadnssrvrecordset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dns-go/dns/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnssrvrecordset/internal"
+	"github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnssrvrecordset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -366,6 +366,25 @@ func (j *jsiiProxy_DataDnsSrvRecordSet)SetService(val *string) {
 		"service",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataDnsSrvRecordSet resource upon running "cdktf plan <stack-name>".
+func DataDnsSrvRecordSet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataDnsSrvRecordSet_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dns.dataDnsSrvRecordSet.DataDnsSrvRecordSet",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

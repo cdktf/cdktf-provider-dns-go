@@ -7,6 +7,10 @@ package mxrecordset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MxRecordSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MxRecordSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MxRecordSet) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (m *jsiiProxy_MxRecordSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MxRecordSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MxRecordSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MxRecordSet) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (m *jsiiProxy_MxRecordSet) validatePutMxParameters(value interface{}) error {
+	return nil
+}
+
+func validateMxRecordSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
