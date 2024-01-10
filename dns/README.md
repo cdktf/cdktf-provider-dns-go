@@ -1,40 +1,8 @@
-# CDKTF prebuilt bindings for hashicorp/dns provider version 3.4.0
+# CDKTF Go bindings for hashicorp/dns provider version 3.4.0
 
 This repo builds and publishes the [Terraform dns provider](https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
-## Available Packages
-
-### NPM
-
-The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-dns](https://www.npmjs.com/package/@cdktf/provider-dns).
-
-`npm install @cdktf/provider-dns`
-
-### PyPI
-
-The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-dns](https://pypi.org/project/cdktf-cdktf-provider-dns).
-
-`pipenv install cdktf-cdktf-provider-dns`
-
-### Nuget
-
-The Nuget package is available at [https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Dns](https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Dns).
-
-`dotnet add package HashiCorp.Cdktf.Providers.Dns`
-
-### Maven
-
-The Maven package is available at [https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-dns](https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-dns).
-
-```
-<dependency>
-    <groupId>com.hashicorp</groupId>
-    <artifactId>cdktf-provider-dns</artifactId>
-    <version>[REPLACE WITH DESIRED VERSION]</version>
-</dependency>
-```
-
-### Go
+## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-dns-go`](https://github.com/cdktf/cdktf-provider-dns-go) package.
 
@@ -42,15 +10,8 @@ The go package is generated into the [`github.com/cdktf/cdktf-provider-dns-go`](
 
 ## Docs
 
-Find auto-generated docs for this provider here:
+Find auto-generated docs for this provider [here](https://github.com/cdktf/cdktf-provider-dns/blob/main/docs/API.go.md).
 
-* [Typescript](./docs/API.typescript.md)
-* [Python](./docs/API.python.md)
-* [Java](./docs/API.java.md)
-* [C#](./docs/API.csharp.md)
-* [Go](./docs/API.go.md)
-
-You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-dns).
 
 ## Versioning
 
@@ -81,9 +42,6 @@ This is mostly based on [Projen](https://github.com/projen/projen), which takes 
 
 There's a custom [project builder](https://github.com/cdktf/cdktf-provider-project) which encapsulate the common settings for all `cdktf` prebuilt providers.
 
-### Provider Version
-
-The provider version can be adjusted in [./.projenrc.js](./.projenrc.js).
 
 ### Repository Management
 

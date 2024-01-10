@@ -7,6 +7,10 @@ package mxrecordset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MxRecordSetMxList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MxRecordSetMxList) validateGetParameters(index *float64) error {
 	return nil
 }
