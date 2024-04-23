@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs dns}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs dns}.
 type DnsProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -210,7 +210,7 @@ func (j *jsiiProxy_DnsProvider) UpdateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs dns} Resource.
 func NewDnsProvider(scope constructs.Construct, id *string, config *DnsProviderConfig) DnsProvider {
 	_init_.Initialize()
 
@@ -228,7 +228,7 @@ func NewDnsProvider(scope constructs.Construct, id *string, config *DnsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs dns} Resource.
 func NewDnsProvider_Override(d DnsProvider, scope constructs.Construct, id *string, config *DnsProviderConfig) {
 	_init_.Initialize()
 

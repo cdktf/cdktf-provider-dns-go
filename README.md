@@ -1,12 +1,15 @@
-# CDKTF Go bindings for hashicorp/dns provider version 3.4.0
+# CDKTF Go bindings for hashicorp/dns provider version 3.4.1
 
-This repo builds and publishes the [Terraform dns provider](https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform dns provider](https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-dns-go`](https://github.com/cdktf/cdktf-provider-dns-go) package.
 
-`go get github.com/cdktf/cdktf-provider-dns-go/dns`
+`go get github.com/cdktf/cdktf-provider-dns-go/dns/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-dns-go/blob/main/dns/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform dns provider version 1:1. 
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform dns provider](https://registry.terraform.io/providers/hashicorp/dns/3.4.0)
+* [Terraform dns provider](https://registry.terraform.io/providers/hashicorp/dns/3.4.1)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
