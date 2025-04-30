@@ -24,7 +24,7 @@ type DataDnsNsRecordSetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Host to look up.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/data-sources/ns_record_set#host DataDnsNsRecordSet#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/ns_record_set#host DataDnsNsRecordSet#host}
 	Host *string `field:"required" json:"host" yaml:"host"`
 }
 

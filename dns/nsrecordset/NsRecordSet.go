@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/ns_record_set dns_ns_record_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/ns_record_set dns_ns_record_set}.
 type NsRecordSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_NsRecordSet) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/ns_record_set dns_ns_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/ns_record_set dns_ns_record_set} Resource.
 func NewNsRecordSet(scope constructs.Construct, id *string, config *NsRecordSetConfig) NsRecordSet {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewNsRecordSet(scope constructs.Construct, id *string, config *NsRecordSetC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/ns_record_set dns_ns_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/ns_record_set dns_ns_record_set} Resource.
 func NewNsRecordSet_Override(n NsRecordSet, scope constructs.Construct, id *string, config *NsRecordSetConfig) {
 	_init_.Initialize()
 
